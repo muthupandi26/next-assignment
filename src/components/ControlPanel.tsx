@@ -30,6 +30,7 @@ const ControlPanel = (props: IControlPanel) => {
       url: "https://fakestoreapi.com/products",
       data: formData,
     });
+    console.log(formData, "formDataaaa");
     if (response.id) {
       setLoading(false);
       props.handleClose(true);
@@ -43,7 +44,7 @@ const ControlPanel = (props: IControlPanel) => {
   return (
     <Box>
       <Modal open={props.open} handleClose={() => props.handleClose(false)}>
-        <Typography variant="h5">Start a New Scan</Typography>
+        <Typography variant="h5">Add a new Product</Typography>
         <Box
           margin={"24px 0px"}
           display={"flex"}

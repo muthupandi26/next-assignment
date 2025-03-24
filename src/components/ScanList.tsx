@@ -64,7 +64,7 @@ const ScanList = () => {
           alignItems={"center"}
         >
           <Typography variant="h6" sx={{ p: 2 }}>
-            Last Scans
+            List of products
           </Typography>
           <Button variant="contained" onClick={handleCreate}>
             Add product
